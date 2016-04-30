@@ -1,5 +1,6 @@
 require "ElasticFit/version"
+require "rest-client"
 
 module ElasticFit
-  # Your code goes here...
+RestClient.get 'https://api.fitbit.com/1/user/-/activities/heart/date/[date]/[end-date]/[detail-level].json'
 end
